@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-spatial-bim"
+version = "1.0.0"
+description = "High-performance C++/Python 3D model parsing and computational geometry engine. Ingests IFC (BIM architecture), FBX, Collada (DAE), OBJ, executes Clipper polygon booleans, and renders headless F3D GPU previews without commercial CAD licenses."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Russell Alan Powers", email = "russell@sovereignbizbox.io"}
+]
+keywords = ["sovereign", "3d graphics & spatial bim", "microservice", "n8n", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = []
+
+[project.scripts]
+sovereign-spatial-bim = "src.cli:main"

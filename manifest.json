@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "PKG-002",
+  "slug": "spatial-bim",
+  "name": "sovereign-spatial-bim",
+  "domain": "3D Graphics & Spatial BIM",
+  "version": "1.0.0",
+  "status": "PRODUCTION_READY",
+  "entrypoint": "src/core.py",
+  "cli_command": "sovereign-spatial-bim",
+  "microservice_port": 8780,
+  "n8n_webhook_path": "spatial-bim-trigger",
+  "n8n_workflow": "n8n/workflow.json",
+  "test_suite": "tests/test_solution.py",
+  "author": "Russell Alan Powers",
+  "license": "MIT"
+}
